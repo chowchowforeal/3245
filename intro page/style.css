@@ -1,0 +1,319 @@
+/* Reset and Base Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e292b;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Deep Teal Hero and Navigation */
+.hero-wrapper {
+    background-color: #06393a;
+    color: #ffffff;
+    padding: 28px 8% 90px 8%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.45rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    font-size: 0.95rem;
+}
+
+.nav-links li a {
+    padding-bottom: 6px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #a7dbd8;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Hero Content Layout */
+.hero-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    margin-top: 55px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 460px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.85rem;
+    line-height: 1.22;
+    margin-bottom: 24px;
+    font-weight: normal;
+}
+
+.hero-text p {
+    font-size: 1.05rem;
+    color: #d8e6e7;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-outline-light {
+    display: inline-block;
+    padding: 11px 24px;
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #06393a;
+}
+
+/* Decorative Hero Card */
+.hero-visual {
+    flex: 0 1 360px;
+    background-color: #f4f6f6;
+    color: #06393a;
+    padding: 34px 28px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    border-top: 5px solid #a7dbd8;
+    position: relative;
+}
+
+.hero-visual-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #0b5e60;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.hero-visual h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.hero-visual p {
+    font-size: 0.92rem;
+    color: #4a5a5c;
+    margin-bottom: 20px;
+}
+
+/* Three-Column Book Categories Section */
+.categories-section {
+    padding: 80px 8%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: #06393a;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 0.95rem;
+    color: #607072;
+    max-width: 520px;
+    margin: 0 auto 48px auto;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    flex: 1 1 280px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #e3ecec;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(6, 57, 58, 0.1);
+}
+
+.card-banner {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf2f3;
+    border-bottom: 1px solid #e3ecec;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-tag {
+    font-size: 0.78rem;
+    color: #6c7e80;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-body h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.35rem;
+    color: #06393a;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.92rem;
+    color: #4f6062;
+    margin-bottom: 20px;
+}
+
+.btn-outline-dark {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1.5px solid #06393a;
+    color: #06393a;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #06393a;
+    color: #ffffff;
+}
+
+/* Soft Pale-Blue About and Store Highlights Section */
+.about-section {
+    background-color: #eaf2f3;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    flex: 1 1 440px;
+}
+
+.about-content h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.85rem;
+    color: #06393a;
+    margin-bottom: 18px;
+}
+
+.about-content p {
+    font-size: 0.96rem;
+    color: #3b4d4f;
+    margin-bottom: 24px;
+}
+
+/* Store Highlights Table */
+.highlights-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    flex: 1 1 380px;
+    box-shadow: 0 6px 18px rgba(6, 57, 58, 0.06);
+}
+
+.highlights-table th,
+.highlights-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dce7e8;
+    font-size: 0.9rem;
+}
+
+.highlights-table th {
+    background-color: #06393a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.highlights-table tr:hover td {
+    background-color: #f4f9fa;
+}
+
+.table-link {
+    color: #06393a;
+    font-weight: 600;
+}
+
+.table-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #042627;
+    color: #b5cbcc;
+    text-align: center;
+    padding: 28px 8%;
+    font-size: 0.88rem;
+}
+
+.footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: underline;
+}
